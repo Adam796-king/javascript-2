@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <title>Spør bruker</title>
+</head>
+<body>
+  <h1>Hva heter du?</h1>
+  <input type="text" id="brukerNavn" placeholder="Skriv navnet ditt">
+  <button onclick="visSvar()">Send inn</button>
+
+  <p id="svar"></p>
+
+  <script>
+    function visSvar() {
+      let navn = document.getElementById("brukerNavn").value;
+      document.getElementById("svar").innerHTML = "Hei , " + navn + "!";
+    }
+  </script>
+</body>
+</html>
